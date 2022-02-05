@@ -25,7 +25,10 @@ public class Player : MonoBehaviour
     [SerializeField]
     private string WALK_ANIMATION = "Walk";
 
+    [SerializeField]
     private bool isGrounded;
+
+    [SerializeField]
     private string GROUND_TAG = "Ground";
 
     private void Awake() {
