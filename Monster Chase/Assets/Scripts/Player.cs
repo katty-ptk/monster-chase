@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
 
     [SerializeField]
     private string GROUND_TAG = "Ground";
+    private string ENEMY_Tag = "Enemy";
 
     private void Awake() {
         myBody = GetComponent<Rigidbody2D>();
@@ -82,6 +83,16 @@ public class Player : MonoBehaviour
     private void OnCollisionEnter2D( Collision2D collision ) {
         if ( collision.gameObject.CompareTag(GROUND_TAG) ) {
             isGrounded = true;
+        }
+
+        if ( collision.gameObject.CompareTag(ENEMY_Tag) ) {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if ( collision.gameObject.CompareTag(ENEMY_Tag)) {
+            Destroy(gameObject);
         }
     }
 }   // class
