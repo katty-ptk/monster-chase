@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7808857910409200298}
   - component: {fileID: 4986280341922073905}
   - component: {fileID: 7716777250125589020}
-  - component: {fileID: 5147682247714168481}
   - component: {fileID: 6401577583413486633}
+  - component: {fileID: 3277483124590860484}
   - component: {fileID: -5110344230576276093}
   m_Layer: 0
   m_Name: 'Player 2 '
@@ -105,32 +105,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &5147682247714168481
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7001965935433364702}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0007124543, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.78, y: 1.91}
-    newSize: {x: 0.78, y: 1.91}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7667607, y: 1.87}
-  m_EdgeRadius: 0
 --- !u!50 &6401577583413486633
 Rigidbody2D:
   serializedVersion: 4
@@ -152,6 +126,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!70 &3277483124590860484
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7001965935433364702}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0049877763, y: 0.0024938583}
+  m_Size: {x: 0.73012316, y: 1.8451607}
+  m_Direction: 0
 --- !u!114 &-5110344230576276093
 MonoBehaviour:
   m_ObjectHideFlags: 0
